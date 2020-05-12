@@ -44,19 +44,7 @@ variable "eng_ver" {
 
 variable "db_name" {
   type=string
-  default="mysqldb-test"
+  default="mysqldb_test"
 }
-
-
-  /*
-  allocated_storage    = 20
-  storage_type         = "gp2"
-  engine               = "mysql"
-  engine_version       = "5.7"
-  instance_class       = "db.t2.micro"
-  name                 = "mydb"
-  username             = "foo"
-  password             = "foobarbaz"
-  */
 
   

@@ -1,7 +1,10 @@
+provider "aws" {
+  region= var.region
+}
 
 
 
-resource "aws_db_instance" "default" {
+resource "aws_db_instance" "db_mysql" {
   allocated_storage    = var.allocated
   storage_type         = var.type
   engine               = var.eng

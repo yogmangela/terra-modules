@@ -1,4 +1,9 @@
 
+variable "region" {
+  type=string
+  default="eu-west-1"
+}
+
 variable "allocated" {
     type= number
     default = 20

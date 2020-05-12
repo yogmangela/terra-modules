@@ -1,7 +1,10 @@
+
 provider "aws" {
-    region = var.region
-    my-access-key = var.my-access-key
-    my-secret-key = var.my-secret-key
+  region= var.region
+  access_key = var.my-access-key
+  secret_key = var.my-secret-key
+  skip_credentials_validation = true
+  version = "~> 2.0"
 }
 
 resource "aws_db_instance" "db_mysql" {

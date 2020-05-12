@@ -1,8 +1,8 @@
 provider "aws" {
-  region= var.region
+    region = var.region
+    my-access-key = var.my-access-key
+    my-secret-key = var.my-secret-key
 }
-
-
 
 resource "aws_db_instance" "db_mysql" {
   allocated_storage    = var.allocated

@@ -1,12 +1,11 @@
 **How to use this module**
--
 - ``terraform init`` : create and empty repository using Terraform configue file. Initialising working directory. download provider plugins
 
 ```
  module "my-s3" {
   source = "github.com/yogmangela/terra-modules//s3"
 }
-
+```
 - once you have added above code and run ``terraform init`` you should have module downloaded into
 ``.terrafomr >> modules >> s3 >>``
           - main.tf, 
@@ -245,7 +244,3 @@ module.my-s3.aws_s3_bucket.web_bucket: Destruction complete after 0s
 
 Destroy complete! Resources: 1 destroyed.
 ```
-
-  
-  
-

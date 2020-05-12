@@ -1,5 +1,6 @@
 
 
+
 resource "aws_db_instance" "default" {
   allocated_storage    = var.allocated
   storage_type         = var.type

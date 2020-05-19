@@ -2,7 +2,8 @@
 ### Add below provide and EC2-terra module into your main.tf file
 ```
 provider "aws" {
-  
+    version = "~> 2.62"
+    region="eu-west-1" // Ireland region
 }
 
 module "my-EC2" {

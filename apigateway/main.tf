@@ -1,7 +1,7 @@
 
 provider "aws" {
-  access_key =   //"your access_key"
-  secret_key =   //"your secret_key"
+  //access_key =   "your access_key"
+  //secret_key =   "your secret_key"
   region     = var.aws_region
   version    = "~> 2.0"
 }

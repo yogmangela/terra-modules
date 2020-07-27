@@ -67,23 +67,15 @@ resource "aws_iam_policy" "policy" {
   description = "A test policy"
   policy = <<EOF
 {
-  "Version": "2012-10-17",
-  "Statement": [
-    {
-      "Action": [
-        "dynamodb:*",
-        "logs:CreateLogGroup",
-        "logs:CreateLogStream",
-        "logs:DescribeLogGroups",
-        "logs:DescribeLogStreams",
-        "logs:PutLogEvents",
-        "logs:GetLogEvents",
-        "logs:FilterLogEvents"
-      ],
-      "Effect": "Allow",
-      "Resource": "*"
-    }
-  ]
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": "dynamodb:*",
+            "Resource": "*"
+        }
+    ]
 }
 EOF
 }

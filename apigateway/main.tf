@@ -71,7 +71,14 @@ resource "aws_iam_policy" "policy" {
   "Statement": [
     {
       "Action": [
-        "dynamodb:*"
+        "dynamodb:*",
+        "logs:CreateLogGroup",
+        "logs:CreateLogStream",
+        "logs:DescribeLogGroups",
+        "logs:DescribeLogStreams",
+        "logs:PutLogEvents",
+        "logs:GetLogEvents",
+        "logs:FilterLogEvents"
       ],
       "Effect": "Allow",
       "Resource": "*"

@@ -1,12 +1,13 @@
 
+/*
 provider "aws" {
   access_key = "" //"your access_key"
   secret_key = ""  //"your secret_key"
   region = var.aws_region
-  //alias  = var.aws_region 
+  alias  = var.aws_region 
   version = "~> 2.0"
 }
-
+*/
 data "aws_availability_zones" "available" {}
 
 resource "aws_dynamodb_table" "dynamoDB" {

@@ -15,7 +15,7 @@ variable "aws_region_main" {
 }
 
 variable "billing_mode"{
-    default = "PAY_PER_REQUEST"  // default is PROVISIONED and PAY_PER_REQUEST
+    default = "PROVISIONED"  // default is PROVISIONED and PAY_PER_REQUEST
 } 
 
  variable "dynamoDbname"{

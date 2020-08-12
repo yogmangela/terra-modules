@@ -12,7 +12,4 @@ resource "aws_instance" "UbuntuServer" {
   key_name = var.key_name
   security_groups = var.security_groups
   user_data = file("install_docker.sh")
-  tags={
-      Name= "Terraform Server test"
-  }
 }
